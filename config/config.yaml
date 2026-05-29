@@ -55,28 +55,26 @@ schedule:
 platforms:
   enabled: true                         # 是否启用热榜平台抓取（true=启用, false=关闭）
   sources:
-    - id: "toutiao"
-      name: "今日头条"
-    - id: "baidu"
-      name: "百度热搜"
+    - id: "gelonghui"
+      name: "格隆汇"
+    - id: "zaobao"
+      name: "联合早报"
+    - id: "mktnews"
+      name: "MKT新闻"
     - id: "wallstreetcn-hot"
       name: "华尔街见闻"
     - id: "thepaper"
       name: "澎湃新闻"
-    - id: "bilibili-hot-search"
-      name: "bilibili 热搜"
     - id: "cls-hot"
       name: "财联社热门"
-    - id: "ifeng"
-      name: "凤凰网"
-    - id: "tieba"
-      name: "贴吧"
-    - id: "weibo"
-      name: "微博"
-    - id: "douyin"
-      name: "抖音"
+    - id: "ithome"
+      name: "IT之家"
     - id: "zhihu"
       name: "知乎"
+    - id: "github"
+      name: "GitHub"
+    - id: "v2ex"
+      name: "V2EX"
 
 
 
@@ -131,7 +129,7 @@ rss:
 # 4. 报告模式
 # ===============================================================
 report:
-  mode: "current"                     # 报告模式（开启 schedule 后作为默认值，会被 timeline 时段覆盖）
+  mode: "daily"                     # 报告模式（开启 schedule 后作为默认值，会被 timeline 时段覆盖）
                                       # daily = 当日汇总，按时推送当天所有匹配新闻（会包含之前推过的）
                                       # current = 当前榜单，按时推送当前在榜的匹配新闻（持续在榜的每次都出现）
                                       # incremental = 增量监控，只推送新增内容，零重复（没有新增时不推送）
